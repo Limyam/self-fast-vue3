@@ -29,9 +29,9 @@ export const useAppStore = defineStore(
       },
     },
     persist: {
-      key: 'theme',
-      storage: localStorage,
-      paths: ['theme'],
+      key: 'theme', // 持久化的数据存储在localStorage中的key
+      storage: localStorage, // 数据存储在localStorage中(默认)
+      paths: ['theme'], // 哪些数据需要被持久化存储
     },
   },
 );
